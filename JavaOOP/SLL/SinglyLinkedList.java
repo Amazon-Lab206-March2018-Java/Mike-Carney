@@ -31,5 +31,6 @@ public class SinglyLinkedList{
         while (current != null){
             System.out.println(current.getValue());
             current = current.getNext();
+        }
     }
 }
