@@ -1,26 +1,35 @@
 public class SinglyLinkedList{
     private Node head;
-    private Node tail;
+    
     public SinglyLinkedList() {
         this.head = null;
-        this.tail = null;
+        
 }
-    public void add(int value) {
-        if (this.head == null)
-            this.head = this.tail;
-        else {
-            tail.link = new Node(value);
-            this.tail = tail.link;
+    public SLL add(int num){
+        Node toAdd = new Node(num);
+        if (this.head == null){
+            this.head = toAdd;
+            return this;
         }
-    }
+        Node current = head;
+        while (current.getNext() != null){
+            current = current.getNext();
+        }
+        current.setNext(toAdd);
+        return this;
+}
+
     public void remove(){
-        Node target = this.head;
-        while(target.getnext()!=null){
-            target=target.getnext();
+        Node current = this.head;
+        while(current.getnext()!=null){
+            current=current.getnext();
         }
-        target = null;
+        current = null;
         }
     public void printValues(){
-        System.out.println(SinglyLinkedList);
+        Node current = head;
+        while (current != null){
+            System.out.println(current.getValue());
+            current = current.getNext();
     }
 }
