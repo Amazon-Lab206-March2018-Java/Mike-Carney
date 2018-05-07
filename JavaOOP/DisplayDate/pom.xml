@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.micarney.portfolio</groupId>
-	<artifactId>Portfolio</artifactId>
+	<groupId>com.micarney.DisplayDate</groupId>
+	<artifactId>DisplayDate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>Portfolio</name>
+	<name>DisplayDate</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

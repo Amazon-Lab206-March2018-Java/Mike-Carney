@@ -28,4 +28,9 @@ public class PortfolioApplication {
 		return "/about.html";
 		
 	}
+	@RequestMapping("/test")
+	  public String test() {
+		return "index.jsp";
+	 }
+	
 }

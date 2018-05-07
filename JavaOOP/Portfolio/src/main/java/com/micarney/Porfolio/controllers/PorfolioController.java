@@ -22,5 +22,9 @@ public class PorfolioController {
 		return "/about.html";
 		
 	}
-
+	
+	 @RequestMapping("/test")
+	  public String test() {
+		return "index.jsp";
+	 }
 }
