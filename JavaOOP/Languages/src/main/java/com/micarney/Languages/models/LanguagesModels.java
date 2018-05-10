@@ -4,10 +4,10 @@ import javax.validation.constraints.Size;
 
 
 public class LanguagesModels {
-	@Size(min = 3, max = 20, message = "Must be 3-20 characters")
+	@Size(min = 2, max = 20, message = "Must be 2-20 characters")
 	private String name;
 	
-	@Size(min = 3, max = 20, message = "Must be 3-20 characters")
+	@Size(min = 2, max = 20, message = "Must be 2-20 characters")
 	private String creator;
 	
 	@Size(min = 1, message = "Version required")
