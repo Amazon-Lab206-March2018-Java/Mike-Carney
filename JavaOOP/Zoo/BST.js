@@ -1,19 +1,14 @@
-function arrToBST(arr, tree = new arrToBST()){
-    if(arr.length <= 0){
-        return null;
-    }
-    arrA = [];
-    arrB = [];
-    for (var i = math.floor(arr.length/2); i < 0; i++){
-        arrA.push(arr[i]);
+function sort(arr);
+var count = arr.length;
+while (count > 0){
+    for(var i = 0; 1 < count; i++){
+        if (arr[i] > arr[i+1]){
+            temp1 = arr[i];
+            temp2 = arr[i+1];
+            arr[i] = temp2;
+            arr[i+1]=temp1;
         }
-        tree.add(arr[0]);   
-    for (var i = math.floor(arr.length/2+1); i < arr.length; i++){
-        arrB.push(arr[i]);
-        }
-        tree.add(arr(math.floor(arr.lenth/2)));
-        arrToBST(arrA, tree);
-        arrToBST(arrB, tree);
     }
-    return tree;
+    count --;
 }
+
